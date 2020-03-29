@@ -20,6 +20,7 @@ RESULTS_DIR = 'results'
 exists(RESULTS_DIR) or makedirs(RESULTS_DIR)
 
 options = webdriver.ChromeOptions()
+options.add_argument('--headless')
 options.add_experimental_option('excludeSwitches', ['enable-automation'])
 options.add_experimental_option('useAutomationExtension', False)
 
