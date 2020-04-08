@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(levelname)s: %(message)s')
 
 INDEX_URL = 'https://dynamic2.scrape.cuiqingcai.com/page/{page}'
-TIME_OUT = 10
+TIMEOUT = 10
 TOTAL_PAGE = 10
 RESULTS_DIR = 'results'
 
@@ -24,7 +24,7 @@ options.add_experimental_option('excludeSwitches', ['enable-automation'])
 options.add_experimental_option('useAutomationExtension', False)
 
 browser = webdriver.Chrome(options=options)
-wait = WebDriverWait(browser, TIME_OUT)
+wait = WebDriverWait(browser, TIMEOUT)
 
 
 def scrape_page(url, condition, locator):
