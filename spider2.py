@@ -18,7 +18,7 @@ WINDOW_WIDTH, WINDOW_HEIGHT = 1366, 768
 exists(RESULTS_DIR) or makedirs(RESULTS_DIR)
 
 browser, tab = None, None
-HEADLESS = False
+HEADLESS = True
 
 
 async def init():
