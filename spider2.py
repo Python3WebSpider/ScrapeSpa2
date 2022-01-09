@@ -9,7 +9,7 @@ from pyppeteer.errors import TimeoutError
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(levelname)s: %(message)s')
 
-INDEX_URL = 'https://dynamic2.scrape.cuiqingcai.com/page/{page}'
+INDEX_URL = 'https://spa2.scrape.center/page/{page}'
 TIMEOUT = 10
 TOTAL_PAGE = 10
 RESULTS_DIR = 'results'
